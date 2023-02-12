@@ -15,13 +15,6 @@ export const created200Response = (body: IUser): IHttpResponse => {
   };
 };
 
-export const error400Response = (body: string): IHttpResponse => {
-  return {
-    statusCode: 400,
-    body,
-  };
-};
-
 export const error500Response = (body: string): IHttpResponse => {
   return {
     statusCode: 500,

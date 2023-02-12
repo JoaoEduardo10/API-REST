@@ -7,9 +7,10 @@ import { MongoDb } from "./dataBase/mongodb";
 const main = async () => {
   app.use(express.json());
   config();
-  app.use(router);
 
   await MongoDb.connect();
+
+  app.use(router);
 
   const PORT = process.env.PORT || 8080;
 
